@@ -3,10 +3,20 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:w="clr-namespace:System.Drawing;assembly=System.Drawing"
         xmlns:local="clr-namespace:WPF_HW5_Beer_Pack"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="Magic world of boxes" Height="500" Width="500" Icon="boxlogo.png">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_Data" HorizontalAlignment="Left">
+                <MenuItem Name="menuItemFromXML" Header="From .xml" Click="MenuItemFromXML_Click"/>
+                <MenuItem Name="menuItemSaveToPNG" Header="Save to .png" Click="MenuItemSaveToPNG_Click" IsEnabled="False"/>
+            </MenuItem>
+            <MenuItem Name="menuItemExit" Header="Exit" Click="MenuItemExit_Click"/>
+        </Menu>
+        <ScrollViewer Name="scrollViewer" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+            <Image Name="imageBox" Source="boxes.jpg" Height="440" Width="440"/>
+        </ScrollViewer>
+    </DockPanel>
 </Window>
