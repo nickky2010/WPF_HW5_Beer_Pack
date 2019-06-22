@@ -8,6 +8,7 @@ CHILI Publisher holds a concept called `“folding settings”`. These settings 
 
  
 Check the video to see how this unfolds (pun intended): https://www.youtube.com/watch?v=j2vSfYykLHY
+
 The folding configuration is stored in an `XML` file. 
 
 The assets folder of this challenge contains the following file: `Beerpack.xml`. 
